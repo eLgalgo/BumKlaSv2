@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<!--Lo que se procesa pero no se ve-->
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../multimedia/logo2.png">
+    <meta charset="UTF-8">
+</head>
+
+<!--Lo que el usuario ve-->
+<body class="grilla3">
+    <script src="../js/bootstrap.js"></script>
+    <header class="container-fluid">
+        <section ><a class="d-flex justify-content-center" href="../index.html" class="Icono-Principal" ><img src="../multimedia/logo.png" alt="BumKlaS" width="15%" ></a></section>
+        <nav class="mx-auto">
+            <ul>
+                <li class="nav-item"><a class="nav-link lead" href="catalogo.html">Catalogo</a></li>
+                <li class="nav-item"><a class="nav-link lead" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li class="nav-item"><a class="nav-link lead" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link lead" href="contacto.html">Contacto</a></li>
+                <input class="form-control me-2" type="user" placeholder="Usuario" aria-label="Search">
+                <input class="form-control me-2" type="password" placeholder="Contraseña" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Iniciar</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <fieldset class="sobre">
+                <legend>Sobre ti: </legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Josue">
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" placeholder="Moreira">
+            </fieldset>
+            <fieldset class="enQue">
+                <legend>¿En que podemos ayudarte?</legend>
+                <label for="asunto">Asunto: </label>
+                <input type="text" name="asunto" placeholder="Envio internacional">
+                <label for="correo">Correo electronico: </label>
+                <input type="email" name="correo" placeholder="donpepe@gmail.com"> <br> <br>
+                <textarea name="duda" cols="70" rows="30"></textarea> <br>
+                <input type="submit" value="ENVIAR">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright - &copy;2021</p>
+        <section class="redes">
+            <a href=""><img src="../multimedia/facebook.png" alt="facebook"></a>
+            <a href=""><img src="../multimedia/instagram.png" alt="instagram" ></a>
+            <a href=""><img src="../multimedia/whatsap.png" alt="whatsap" ></a>
+        </section>
+    </footer>
+</body>
+
+</html>
