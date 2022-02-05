@@ -8,6 +8,10 @@
 /*RESPONSIVE*/
 /*DESKTOP*/
 /*Estilos generales*/
+nav div{
+    display: flex;
+    justify-content: center;
+}
 nav li{
     font-size: 1.3rem;
     display: inline-block;
@@ -434,21 +438,13 @@ select{
 /*SMARTPHONE*/
 @media (max-width: 500px) {
     /*Index*/
-    header{
+    nav ul{
+        display: flex;
         flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
     }
-    header section{
+    nav div{
         display: flex;
-        justify-content: center;
-    }
-    nav li{
-        display: block;
-    }
-    nav{
-        display: flex;
-        justify-content: center;
+        flex-direction: column;
     }
     .parrafo1{
         flex-direction: column;
