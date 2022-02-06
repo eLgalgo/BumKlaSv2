@@ -130,7 +130,7 @@ footer{
     "copy ayuda";
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to bottom, #ca757583, white);
+    background: linear-gradient(to top, #ca757583, white);
 }
 
 .grilla{
@@ -147,7 +147,7 @@ footer{
 /*Index*/
 /*Nosotros*/
 .sponsors{
-    background-color: #b8cbf0
+    background-color: #bb3b3b34
 }
 main p{
     display: flex;
@@ -170,13 +170,13 @@ main p{
 .imagenNosotros1 p{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #374b73;
+    color: #ca7575;
     font-style: oblique;
 }
 .patrocinio1{
     display: flex;
     justify-content: center;
-    color: #374b73;
+    color: #ca7575;
     font-size: 20px;
 }
 .patrocinio{
@@ -192,7 +192,7 @@ main p{
     flex-wrap: wrap;
     align-content: center;
     font-family: sans-serif;
-    color: #374b73;
+    color: #ca7575;
 }
 
 .grilla2{
@@ -205,21 +205,21 @@ main p{
 }
 /*Nosotros*/
 /*Contacto*/
+.contactos{
+    display: flex;
+    flex-direction: row;
+}
 .contacto form{
     display: flex;
     justify-content: center;
 }
 
 form{
-    background-image: url("../multimedia/fondo4.png");
-    padding: 20px;
-    margin: 20px;
     border: firebrick double;
 }
 
 fieldset{
     margin: 20px;
-    padding: 20px;
     border-radius: 5px;
 }
 legend{
@@ -250,7 +250,7 @@ input{
 }
 form{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 main{
     grid-area: contacto;
@@ -276,7 +276,7 @@ footer{
 .preguntasFrecuentes section{
     display: flex;
     flex-direction: column;
-    color: #374b73;
+    color: #bb3b3b;
     font-size: 20px;
     margin: 20px;
 }
@@ -291,12 +291,12 @@ footer{
     margin: 10px;
 }
 .preguntasFrecuentes div h2{
-    color: #374b73;
+    color: #bb3b3b;
     font-size: 30px;
     margin: 10px;
 }
 .preguntasFrecuentes div h3{
-    color: #374b73;
+    color: #bb3b3b;
     font-size: 20px;
     margin-left: 100px;
     margin-bottom: 80px;
@@ -305,29 +305,11 @@ footer{
 /*Preguntas Frecuentes*/
 
 /*Catalogo*/
-.menuCatalogo{
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
-}
-
-select{
-    color: #374b73;
-    font-size: 20px;
-    width: 100%;
-    height: 50%;
-    margin: 20px;
-}
-
-.imagenes img{
-    width: 10%;
-    margin: 45px;
-}
 
 .titulos{
     display: flex;
     justify-content: center;
-    color: #374b73;
+    color: #bb3b3b;
     font-size: 40px;
     margin-right: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -340,6 +322,9 @@ select{
 
 /*TABLET*/
 @media (min-width: 501px) and (max-width: 1023px) {
+    .carucel{
+        display: none;
+    }
     header{
         flex-direction: column;
         align-content: center;
@@ -455,11 +440,22 @@ select{
     aside{
         flex-direction: column;
     }
-    .sponsor p{
-        font-size: 12px;
+    .sponsor{
+        flex-direction: column;
+    }
+    .sponsor img{
+        width: 30%;
     }
     footer{
         margin: 0px ;
+    }
+    footer p{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    footer{
+        padding: none;
+        margin: none;
     }
     /*Index*/
     /*Nosotros*/
@@ -507,6 +503,9 @@ select{
     }
     /*Nosotros*/
     /*Contacto*/
+    .carucel{
+        display: none;
+    }
     form{
         flex-direction: column;
     }
@@ -558,10 +557,88 @@ select{
     }
     /*Contacto*/
     /*Catalogo*/
-    .menuCatalogo{
-        flex-direction: column;
+    .catalogos{
+        display: flex;
+        justify-content: center;
     }
     /*Catalogo*/
     
 }
 /*SMARTPHONE*/
+
+/*Animaciones*/
+
+@keyframes animacionCatalogo{
+    0%{
+        transform: scale(100%);
+    }
+    25%{
+        transform: scale(200%);
+    }
+    50%{
+        transform: scale(150%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+
+}
+
+.animacionCatalogo:hover{
+    animation-name: animacionCatalogo;
+    animation-duration: 13s;
+}
+
+@keyframes animacionIndex {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.animacionIndex{
+    animation-name: animacionIndex;
+    animation-duration: 5s;
+}
+
+
+@keyframes animacionIndex2 {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.animacionIndex2{
+    animation-name: animacionIndex2;
+    animation-duration: 5s;
+}
+
+@keyframes animacionIndex3 {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.animacionIndex3:hover{
+    animation-name: animacionIndex3;
+    animation-duration: 5s;
+}
+/*Animaciones*/
+

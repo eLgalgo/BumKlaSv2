@@ -28,25 +28,53 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container-fluid contactos">
         <form action="">
             <fieldset class="sobre">
-                <legend>Sobre ti: </legend>
-                <label for="nombre">Nombre: </label>
-                <input type="text" name="nombre" placeholder="Josue">
-                <label for="apellido">Apellido: </label>
-                <input type="text" name="apellido" placeholder="Moreira">
+                <legend >Sobre ti: </legend>
+                <label for="nombre" class="lead">Nombre: </label>
+                <input class="form-control me-2" type="text" name="nombre" placeholder="Josue">
+                <label for="apellido" class="lead">Apellido: </label>
+                <input class="form-control me-2" type="text" name="apellido" placeholder="Moreira">
             </fieldset>
             <fieldset class="enQue">
                 <legend>¿En que podemos ayudarte?</legend>
-                <label for="asunto">Asunto: </label>
-                <input type="text" name="asunto" placeholder="Envio internacional">
-                <label for="correo">Correo electronico: </label>
-                <input type="email" name="correo" placeholder="donpepe@gmail.com"> <br> <br>
-                <textarea name="duda" cols="70" rows="30"></textarea> <br>
-                <input type="submit" value="ENVIAR">
+                <label for="asunto" class="lead">Asunto: </label>
+                <input class="form-control me-2" type="text" name="asunto" placeholder="Envio internacional">
+                <div>
+                    <label for="correo" class="lead">Correo electronico: </label>
+                    <input class="form-control me-2" type="email" name="correo" placeholder="donpepe@gmail.com"> <br> <br>
+                </div>
+                <textarea class="form-control me-2" name="duda" cols="70" rows="8"></textarea> <br>
+                <button class="btn btn-outline-success" type="submit">Enviar</button>
             </fieldset>
         </form>
+        <div id="carouselExampleIndicators" class=" carucel col-sm-6 col-md-6 carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded-3 m-3">
+              <div class="carousel-item active">
+                <img src="../multimedia/carusel1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/carusel2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/carusel3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
     <footer>
         <p>Copyright - &copy;2021</p>
